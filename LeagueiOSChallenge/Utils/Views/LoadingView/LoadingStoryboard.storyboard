@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hdn-Zb-UP7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="6If-8e-4N4">
+            <objects>
+                <viewController id="Hdn-Zb-UP7" customClass="LoadingViewController" customModule="LeagueiOSChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a9E-Wg-dLy"/>
+                        <viewControllerLayoutGuide type="bottom" id="sKK-i0-PBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fQF-Ac-fYo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSE-S0-mT7">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A70-hM-Qq4">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUH-TG-uEY" customClass="UIBorderedView" customModule="LeagueiOSChallenge" customModuleProvider="target">
+                                <rect key="frame" x="141.66666666666666" y="371" width="110" height="110"/>
+                                <color key="backgroundColor" red="0.32621697659999999" green="0.55333843429999996" blue="0.54656298250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="63W-iF-hF3"/>
+                                    <constraint firstAttribute="width" constant="110" id="e49-aT-9tP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemMintColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQr-Tf-vIt" userLabel="Middle Bordered View" customClass="UIBorderedView" customModule="LeagueiOSChallenge" customModuleProvider="target">
+                                <rect key="frame" x="151.66666666666666" y="381" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Z8f-TF-AqX"/>
+                                    <constraint firstAttribute="width" constant="90" id="yVt-Zy-RQt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.2512061847" green="0.52557184280000002" blue="0.41273044609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sh-UI-ft0" customClass="UIBorderedView" customModule="LeagueiOSChallenge" customModuleProvider="target">
+                                <rect key="frame" x="161.66666666666666" y="391" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="9OT-xR-rAz"/>
+                                    <constraint firstAttribute="height" constant="70" id="M0L-AX-bab"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.29016378347486588" green="0.54659310567010311" blue="0.41260082561158312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="League-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-4L-Y5M">
+                                <rect key="frame" x="176.66666666666666" y="406" width="40" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ovj-3n-q4s"/>
+                                    <constraint firstAttribute="width" constant="40" id="VHp-kO-bcz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bSE-S0-mT7" firstAttribute="height" secondItem="fQF-Ac-fYo" secondAttribute="height" id="0rh-dF-aWC"/>
+                            <constraint firstItem="8Sh-UI-ft0" firstAttribute="centerY" secondItem="fQF-Ac-fYo" secondAttribute="centerY" id="6S6-yf-9tu"/>
+                            <constraint firstItem="bSE-S0-mT7" firstAttribute="width" secondItem="fQF-Ac-fYo" secondAttribute="width" id="B6D-AQ-2bE"/>
+                            <constraint firstItem="0eh-4L-Y5M" firstAttribute="centerX" secondItem="fQF-Ac-fYo" secondAttribute="centerX" id="DiG-s7-GMe"/>
+                            <constraint firstItem="0eh-4L-Y5M" firstAttribute="centerY" secondItem="fQF-Ac-fYo" secondAttribute="centerY" id="KTg-OA-aqk"/>
+                            <constraint firstItem="YQr-Tf-vIt" firstAttribute="centerX" secondItem="fQF-Ac-fYo" secondAttribute="centerX" id="LQt-LS-qhs"/>
+                            <constraint firstItem="8Sh-UI-ft0" firstAttribute="centerX" secondItem="fQF-Ac-fYo" secondAttribute="centerX" id="MDV-6M-IKt"/>
+                            <constraint firstItem="bSE-S0-mT7" firstAttribute="centerY" secondItem="fQF-Ac-fYo" secondAttribute="centerY" id="Puq-xH-y1Y"/>
+                            <constraint firstItem="JUH-TG-uEY" firstAttribute="centerX" secondItem="fQF-Ac-fYo" secondAttribute="centerX" id="hgH-HF-Bnp"/>
+                            <constraint firstItem="YQr-Tf-vIt" firstAttribute="centerY" secondItem="fQF-Ac-fYo" secondAttribute="centerY" id="kyp-cJ-eQQ"/>
+                            <constraint firstItem="bSE-S0-mT7" firstAttribute="centerX" secondItem="fQF-Ac-fYo" secondAttribute="centerX" id="mHv-hq-HqE"/>
+                            <constraint firstItem="JUH-TG-uEY" firstAttribute="centerY" secondItem="fQF-Ac-fYo" secondAttribute="centerY" id="sMj-4K-UUn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="innerBorderedView" destination="8Sh-UI-ft0" id="4GA-1L-ckR"/>
+                        <outlet property="loadingImageView" destination="0eh-4L-Y5M" id="654-CJ-BBR"/>
+                        <outlet property="middleBorderedView" destination="YQr-Tf-vIt" id="8Dy-dr-POn"/>
+                        <outlet property="outerBorderedView" destination="JUH-TG-uEY" id="9EX-Qe-hfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rN3-ST-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="223"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="League-Icon" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
